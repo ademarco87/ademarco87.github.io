@@ -4,31 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alexander DeMarco - CS 499 ePortfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Alexander DeMarco</h1>
-    <p>Computer Science Capstone ePortfolio</p>
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Alexander DeMarco</h1>
+      <nav>
+        <a href="#self-assessment">Self-Assessment</a>
+        <a href="#code-review">Code Review</a>
+        <a href="#enhancements">Enhancements</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="section">
-    <h2>Welcome</h2>
-    <p>This portfolio showcases my growth throughout the CS program at SNHU. You’ll find enhanced artifacts that demonstrate my abilities in software engineering, algorithms and data structures, and database systems—each aligned with core course outcomes and my career focus in secure software and reverse engineering.</p>
-  </div>
+  <main class="container">
+    <section id="welcome">
+      <h2>Welcome</h2>
+      <p>This portfolio showcases my growth throughout the Computer Science program at SNHU, with enhanced artifacts demonstrating abilities in software engineering, algorithms & data structures, and database systems — each aligned with core course outcomes and my career focus in secure software and reverse engineering.</p>
+    </section>
 
-  <div class="section">
-    <h2>Artifacts & Enhancements</h2>
-    <p>Coming soon: Direct links to code samples, project walkthroughs, and technical narratives.</p>
-  </div>
+    <section id="self-assessment">
+      <h2>Professional Self-Assessment</h2>
+      <p>Summary of your professional journey goes here. Include collaboration, communication, problem-solving, and how your enhancements reflect your strengths in security-focused software development.</p>
+    </section>
 
-  <div class="section">
-    <h2>Professional Self-Assessment</h2>
-    <p>This section will provide a reflective overview of my journey through the program and how it has prepared me for a career in secure software development.</p>
-  </div>
+    <section id="code-review">
+      <h2>Informal Code Review</h2>
+      <p>This 8-minute walkthrough covers the original artifacts, identified issues, and the planned enhancements.</p>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="assets/video/code-review.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section id="enhancements">
+      <h2>Artifacts & Enhancements</h2>
+
+      <div class="card">
+        <h3>Enhancement 1 — Software Design & Engineering</h3>
+        <p>Removed hardcoded credentials, introduced environment configuration, refactored for modularity and secure login.</p>
+        <div class="links">
+          <a href="ORIGINAL_LINK" class="btn">Original</a>
+          <a href="ENHANCED_LINK" class="btn btn-primary">Enhanced</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Enhancement 2 — Algorithms & Data Structures</h3>
+        <p>Replaced static arrays with vectors, added modular functions, improved file I/O persistence.</p>
+        <div class="links">
+          <a href="ORIGINAL_LINK" class="btn">Original</a>
+          <a href="ENHANCED_LINK" class="btn btn-primary">Enhanced</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Enhancement 3 — Databases</h3>
+        <p>Refactored Python dashboard with mock data, stronger input validation, and improved documentation.</p>
+        <div class="links">
+          <a href="ORIGINAL_LINK" class="btn">Original</a>
+          <a href="ENHANCED_LINK" class="btn btn-primary">Enhanced</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Alexander DeMarco | <a href="https://github.com/ademarco87">GitHub</a>
+    <p>&copy; 2025 Alexander DeMarco | <a href="https://github.com/ademarco87">GitHub</a></p>
   </footer>
 </body>
 </html>
