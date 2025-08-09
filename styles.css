@@ -91,4 +91,38 @@ section{margin:2.25rem 0;scroll-margin-top:115px}
 #skills h2{border-bottom:1px solid var(--line);padding-bottom:.5rem;margin-bottom:1.2rem}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
 #skills h3{color:#eaf2ff;margin-bottom:.35rem}
-#skills ul{list-style:
+
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#skills li {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+#skills li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+footer {
+  background: rgba(8, 12, 24, 0.95);
+  border-top: 1px solid var(--line);
+  padding: 1.2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--gold);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
