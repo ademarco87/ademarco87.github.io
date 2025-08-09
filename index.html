@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alexander DeMarco - CS 499 ePortfolio</title>
+  <meta name="description" content="Secure software • C++ & Python • Algorithms • Databases" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- NAV -->
   <header class="navbar">
     <div class="nav-container">
-      <h1 class="logo">Alexander DeMarco</h1>
+      <a class="brand" href="#">Alexander DeMarco</a>
       <nav>
+        <a href="#skills">Skills</a>
         <a href="#self-assessment">Self-Assessment</a>
         <a href="#code-review">Code Review</a>
         <a href="#enhancements">Enhancements</a>
@@ -19,62 +22,124 @@
     </div>
   </header>
 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Secure Software • Algorithms • Databases</h1>
+      <p>Security-minded C++ & Python developer. I design reliable systems with clean structure, validated inputs, and thoughtful data modeling.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#enhancements">View Projects</a>
+        <a class="btn" href="mailto:alex.demarco87@yahoo.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/alexander-demarco-458118149" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
   <main class="container">
-    <section id="welcome">
-      <h2>Welcome</h2>
-      <p>This portfolio showcases my growth throughout the Computer Science program at SNHU, with enhanced artifacts demonstrating abilities in software engineering, algorithms & data structures, and database systems — each aligned with core course outcomes and my career focus in secure software and reverse engineering.</p>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li>C++</li><li>Java</li><li>Python</li>
+            <li>JavaScript</li><li>HTML5/CSS3</li><li>SQL</li><li>Bash</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Frameworks & Libraries</h3>
+          <ul>
+            <li>Spring Boot</li><li>Express.js</li><li>Angular</li>
+            <li>Dash & Plotly</li><li>Handlebars.js</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools & Platforms</h3>
+          <ul>
+            <li>Git & GitHub</li><li>Visual Studio</li><li>VS Code</li>
+            <li>Android Studio</li><li>Postman</li><li>Docker</li>
+            <li>SonarQube</li><li>Keytool</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Specialties</h3>
+          <ul>
+            <li>Secure coding</li><li>Reverse engineering</li>
+            <li>Cryptographic implementation</li><li>Data structure optimization</li>
+            <li>MVC architecture</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
+    <!-- SELF-ASSESSMENT -->
     <section id="self-assessment">
       <h2>Professional Self-Assessment</h2>
-      <p>Summary of your professional journey goes here. Include collaboration, communication, problem-solving, and how your enhancements reflect your strengths in security-focused software development.</p>
+      <div class="section-body">
+        <p>Brief overview of your journey, collaboration and communication experience, and how the three enhancements reflect your strengths in secure software development. (You can expand this later.)</p>
+      </div>
     </section>
 
+    <!-- CODE REVIEW -->
     <section id="code-review">
       <h2>Informal Code Review</h2>
-      <p>This 8-minute walkthrough covers the original artifacts, identified issues, and the planned enhancements.</p>
+      <p class="muted">8-minute walkthrough of original artifacts, issues found (structure, security, efficiency), and planned enhancements.</p>
       <div class="video-wrapper">
-        <video controls>
+        <video controls preload="metadata" aria-label="CS-499 Code Review video" poster="assets/img/code-review-poster.jpg">
           <source src="assets/video/CapstoneCodeReview.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser doesn’t support HTML5 video. <a href="assets/video/CapstoneCodeReview.mp4">Download</a>.
         </video>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="enhancements">
       <h2>Artifacts & Enhancements</h2>
 
-      <div class="card">
-        <h3>Enhancement 1 — Software Design & Engineering</h3>
+      <article class="card">
+        <header class="card-head">
+          <h3>Enhancement 1 — Software Design & Engineering</h3>
+          <div class="tags"><span>C++</span><span>Security</span><span>.env</span></div>
+        </header>
         <p>Removed hardcoded credentials, introduced environment configuration, refactored for modularity and secure login.</p>
         <div class="links">
-          <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin" target="_blank" rel="noopener noreferrer" class="btn">Original</a>
-          <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Enhanced</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin">Original</a>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement1">Enhanced</a>
         </div>
-      </div>
+      </article>
 
-      <div class="card">
-        <h3>Enhancement 2 — Algorithms & Data Structures</h3>
-        <p>Replaced static arrays with vectors, added modular functions, improved file I/O persistence.</p>
+      <article class="card">
+        <header class="card-head">
+          <h3>Enhancement 2 — Algorithms & Data Structures</h3>
+          <div class="tags"><span>C++</span><span>Vectors</span><span>I/O</span></div>
+        </header>
+        <p>Replaced static arrays with <code>std::vector</code>, added modular functions, and improved file persistence and error handling.</p>
         <div class="links">
-          <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin" target="_blank" rel="noopener noreferrer" class="btn">Original</a>
-          <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement2" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Enhanced</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin">Original</a>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement2">Enhanced</a>
         </div>
-      </div>
+      </article>
 
-      <div class="card">
-        <h3>Enhancement 3 — Databases</h3>
+      <article class="card">
+        <header class="card-head">
+          <h3>Enhancement 3 — Databases</h3>
+          <div class="tags"><span>Python</span><span>Validation</span><span>Dashboard</span></div>
+        </header>
         <p>Refactored Python dashboard with mock data, stronger input validation, and improved documentation.</p>
         <div class="links">
-          <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoE3Origin" target="_blank" rel="noopener noreferrer" class="btn">Original</a>
-          <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoEnhancement3" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Enhanced</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoE3Origin">Original</a>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoEnhancement3">Enhanced</a>
         </div>
-      </div>
+      </article>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Alexander DeMarco | <a href="https://github.com/ademarco87" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    <p>© 2025 Alexander DeMarco · <a target="_blank" rel="noopener" href="https://github.com/ademarco87">GitHub</a></p>
   </footer>
 </body>
 </html>
