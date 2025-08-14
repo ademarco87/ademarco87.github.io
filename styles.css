@@ -124,3 +124,13 @@ footer a:hover{text-decoration:underline}
   outline-offset: 3px;
   text-decoration: none;
 }
+
+.disclaimer {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #FFD700; /* gold highlight */
+  background-color: #fffbe6;      /* soft yellow background */
+  font-size: 0.9rem;
+  color: #333;
+  border-radius: 4px;
+}
