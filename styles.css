@@ -532,6 +532,64 @@
 
   .blog-card:hover .blog-arrow { color: var(--accent); transform: translate(3px,-3px); }
 
+  /* BLOG FEATURED */
+  .blog-featured {
+    display: block;
+    background: var(--bg2);
+    padding: 2.5rem 3rem;
+    border-left: 2px solid var(--accent);
+    text-decoration: none;
+    transition: background 0.2s;
+    position: relative;
+  }
+
+  .blog-featured:hover { background: var(--bg3); }
+
+  .blog-featured-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-featured-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid rgba(200,184,154,0.3);
+    padding: 2px 8px;
+  }
+
+  .blog-featured-title {
+    font-family: var(--display);
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .blog-featured-excerpt {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.75;
+    max-width: 640px;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-featured-cta {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    transition: letter-spacing 0.2s;
+  }
+
+  .blog-featured:hover .blog-featured-cta { letter-spacing: 0.14em; }
+
   /* SKILLS */
   .skills-layout {
     display: grid;
@@ -1067,6 +1125,7 @@
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .projects-grid { grid-template-columns: 1fr; }
     .blog-grid { grid-template-columns: 1fr; }
+    .blog-featured { padding: 1.75rem 1.5rem; }
     .skills-layout { grid-template-columns: 1fr; }
     .capstone-grid { grid-template-columns: 1fr; }
     .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
