@@ -1,408 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander DeMarco | Software Developer Portfolio</title>
-  <meta
-    name="description"
-    content="Security-focused software developer portfolio featuring C++, Java, Python, algorithms, and database projects."
-  />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander DeMarco — Software Engineer</title>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Alexander DeMarco — Software Engineer">
+<meta property="og:description" content="Army veteran, paramedic, and software engineer. BS Computer Science, SNHU 2025. Secure coding, full stack development, and a story worth reading.">
+<meta property="og:url" content="https://ademarco87.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ademarco87.github.io/assets/img/code-review-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alexander DeMarco — Software Engineer">
+<meta name="twitter:description" content="Combat. Code. Clarity. Army veteran and paramedic turned software engineer.">
+<meta name="description" content="Army veteran, paramedic, and software engineer. BS Computer Science, SNHU 2025. Secure coding, full stack development, and a story worth reading.">
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="nav-container">
-      <a class="brand" href="#">Alexander DeMarco</a>
-      <nav>
-        <a href="#summary">Summary</a>
-        <a href="#skills">Skills</a>
-        <a href="#enhancements">Projects</a>
-        <a href="#self-assessment">Story</a>
-        <a href="#code-review">Code Review</a>
-      </nav>
-    </div>
-  </header>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <span class="eyebrow">Software Developer Portfolio</span>
-      <h1>Entry-level software developer with a security mindset and a proven record of resilience under pressure.</h1>
-      <p>
-        I build maintainable software in C++, Java, and Python, with a strong interest in backend development,
-        secure coding, and systems that are designed to be reliable from the start. This portfolio highlights
-        how I improve existing code, strengthen validation, and turn academic artifacts into cleaner engineering work.
-      </p>
-      <div class="hero-points" aria-label="Professional highlights">
-        <span>Seeking junior software, backend, and security-focused roles</span>
-        <span>Army veteran and former paramedic</span>
-        <span>Strengths in secure coding, debugging, and structured problem solving</span>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">A<span>.</span>DeMarco</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#capstone">Capstone</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;gap:0.75rem;align-items:center;">
+    <a href="assets/resume/Alexander_DeMarco_Resume.pdf" download class="nav-resume">Resume ↓</a>
+    <a href="mailto:alex.demarco87@yahoo.com" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div style="position:absolute;left:33%;top:0;bottom:0;width:1px;background:var(--border);"></div>
+  <div style="position:absolute;left:66%;top:0;bottom:0;width:1px;background:var(--border);"></div>
+
+  <div class="hero-inner">
+    <div class="hero-eyebrow fade-up">Software Engineer — Open to Work</div>
+    <h1 class="hero-name fade-up">
+      Alexander<br>
+      <span class="line2">DeMarco</span>
+    </h1>
+    <p class="hero-tagline fade-up typewriter">Combat. Code. Clarity.</p>
+    <div class="clearance-badge fade-up">Active Public Trust Clearance &nbsp;·&nbsp; Prior DoD Secret</div>
+    <p class="hero-desc fade-up">Army veteran and former Paramedic Battalion Chief turned software engineer. BS Computer Science, SNHU 2025. I build secure, maintainable software with the discipline of someone who's worked where failure isn't an option.</p>
+    <div class="hero-actions fade-up">
+      <a href="https://github.com/ademarco87" target="_blank" class="btn-primary">View My GitHub ↗</a>
+      <a href="assets/resume/Alexander_DeMarco_Resume.pdf" download class="btn-ghost">Download Resume ↓</a>
+      <a href="https://devbyalex.onrender.com/" target="_blank" class="btn-ghost">Read the Blog ↗</a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-stats fade-up">
+      <div>
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Yrs Mission-Critical Ops</div>
       </div>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#enhancements">View Projects</a>
-        <a class="btn" href="#summary">Why I&rsquo;m a Strong Candidate</a>
-        <a class="btn" href="mailto:alex.demarco87@yahoo.com" target="_blank" rel="noopener">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/alexander-demarco-458118149" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://www.github.com/ademarco87" target="_blank" rel="noopener">GitHub</a>
+      <div>
+        <div class="stat-num">2</div>
+        <div class="stat-label">Live Sites Built</div>
+      </div>
+      <div>
+        <div class="stat-num">18</div>
+        <div class="stat-label">GitHub Repos</div>
+      </div>
+      <div>
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Languages</div>
+      </div>
+    </div>
+  </div>
+  <div class="big-text">AD</div>
+</div>
+
+<!-- ABOUT -->
+<div class="section-full reveal" id="about">
+  <section>
+    <div class="section-label">01 — About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a <strong>software engineering graduate</strong> making a deliberate transition into tech after 15 years serving in the U.S. Army and as a Paramedic Lieutenant. That background isn't a detour — it's a foundation.</p>
+        <p>I've operated in environments where <strong>accuracy, documentation, and fast decisions under pressure</strong> aren't best practices — they're requirements. I bring that same standard to software: security-first, modular, and built to hold up.</p>
+        <div class="about-quote">
+          <p>"The same discipline that carried me through war zones and emergency calls also carried me through debugging code at two in the morning."</p>
+        </div>
+        <p>Father of five daughters. Army veteran. Paramedic. Developer. I chose this path not because it was easy, but because it offered something I hadn't felt in years: <strong>the chance to create, solve problems with purpose, and chart a future that was mine to define.</strong></p>
+        <p style="margin-bottom:0;">My capstone artifacts, code review video, and full professional reflection are all in the <a href="#capstone" style="color:var(--accent);text-decoration:none;">Capstone section</a> below.</p>
+      </div>
+      <div>
+        <div class="values-list">
+          <div class="value-item">
+            <div class="value-name">Resilience</div>
+            <div class="value-desc">Built through battlefields, refined through burnout</div>
+          </div>
+          <div class="value-item">
+            <div class="value-name">Clarity</div>
+            <div class="value-desc">Chaos taught me to prioritize signal over noise</div>
+          </div>
+          <div class="value-item">
+            <div class="value-name">Discipline</div>
+            <div class="value-desc">From field dressings to full stack apps — no corners cut</div>
+          </div>
+          <div class="value-item">
+            <div class="value-name">Authenticity</div>
+            <div class="value-desc">Been through enough to skip the B.S.</div>
+          </div>
+        </div>
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--bg2);border-left:2px solid var(--accent3);">
+          <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--accent3);text-transform:uppercase;margin-bottom:0.75rem;">Education</div>
+          <div style="font-size:14px;color:var(--text);margin-bottom:4px;">BS Computer Science — Software Engineering</div>
+          <div style="font-size:13px;color:var(--muted);margin-bottom:1rem;">Southern New Hampshire University · 2025</div>
+          <div style="font-size:14px;color:var(--text);margin-bottom:4px;">AS Healthcare Management</div>
+          <div style="font-size:13px;color:var(--muted);">Purdue Global · 2016</div>
+        </div>
       </div>
     </div>
   </section>
+</div>
 
-  <main class="container">
-    <section id="summary" class="intro-grid">
-      <div class="feature-panel intro-copy">
-        <h2>What I Bring</h2>
-        <p class="lead">
-          I am a career-transition developer who brings discipline, composure, and accountability from military and
-          emergency medical work into software engineering. I am especially interested in backend and security-conscious
-          development, where careful design, validation, and maintainability matter.
-        </p>
-        <p>
-          My capstone artifacts are the core of this portfolio, but they show more than coursework. Each one demonstrates
-          how I examine an existing system, identify weak points, and improve structure, safety, and long-term usability.
-        </p>
+<!-- PROJECTS -->
+<div class="section-full reveal" id="projects">
+  <section>
+    <div class="section-label">02 — Projects</div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-num">001</div>
+        <div class="project-title">Travlr Getaways</div>
+        <div class="project-stack">Node.js · Express · Angular · MongoDB · JWT</div>
+        <div class="project-desc">Full stack travel management platform with a customer-facing UI and a separate Angular SPA for admin. RESTful APIs, JWT authentication, and dynamic MongoDB data rendering. Real-world architecture with clear separation of concerns.</div>
+        <div class="project-tags">
+          <span class="tag">Full Stack</span>
+          <span class="tag">Angular SPA</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Auth</span>
+        </div>
+        <a href="https://github.com/ademarco87" target="_blank" class="project-link">↗</a>
       </div>
-      <div class="feature-panel">
-        <h2>Why Employers Should Care</h2>
-        <ul class="checklist">
-          <li>I improve legacy or fragile code instead of only building greenfield demos.</li>
-          <li>I think about security, validation, and maintainability early.</li>
-          <li>I document decisions clearly and explain tradeoffs in plain language.</li>
-          <li>I bring resilience, teamwork, and calm decision-making from high-pressure environments.</li>
-        </ul>
+      <div class="project-card">
+        <div class="project-num">002</div>
+        <div class="project-title">Secure C++ Client Refactor</div>
+        <div class="project-stack">C++ · Ghidra · SEI CERT · Env Variables</div>
+        <div class="project-desc">Reverse-engineered a legacy C++ system using Ghidra, then refactored to eliminate hardcoded credentials and implement secure environment-based authentication. Follows SEI CERT C++ standards with before/after comparison available.</div>
+        <div class="project-tags">
+          <span class="tag">Security</span>
+          <span class="tag">Reverse Eng.</span>
+          <span class="tag">SEI CERT</span>
+          <span class="tag">C++</span>
+        </div>
+        <a href="https://github.com/ademarco87/CapstoneDemo" target="_blank" class="project-link">↗</a>
       </div>
-    </section>
-
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Languages</h3>
-          <ul>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML5/CSS3</li>
-            <li>SQL</li>
-            <li>MongoDB</li>
-            <li>Bash</li>
-          </ul>
+      <div class="project-card">
+        <div class="project-num">003</div>
+        <div class="project-title">Animal Shelter Dashboard</div>
+        <div class="project-stack">Python · MongoDB · Plotly Dash · CRUD</div>
+        <div class="project-desc">Secure data-driven dashboard with full CRUD, authentication, and interactive real-time charts. Enhanced with mock data support and stronger input validation — designed for failure paths, not just happy flows.</div>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Data Viz</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Validation</span>
         </div>
-        <div>
-          <h3>Frameworks &amp; Libraries</h3>
-          <ul>
-            <li>Spring Boot</li>
-            <li>Express.js</li>
-            <li>Angular</li>
-            <li>Dash and Plotly</li>
-            <li>Handlebars.js</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Tools &amp; Platforms</h3>
-          <ul>
-            <li>Git and GitHub</li>
-            <li>Visual Studio</li>
-            <li>VS Code</li>
-            <li>Android Studio</li>
-            <li>Postman</li>
-            <li>Ghidra</li>
-            <li>SonarQube</li>
-            <li>Keytool</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Specialties</h3>
-          <ul>
-            <li>Secure coding</li>
-            <li>Reverse engineering</li>
-            <li>Cryptographic implementation</li>
-            <li>Data structure optimization</li>
-            <li>MVC architecture</li>
-          </ul>
-        </div>
+        <a href="https://github.com/ademarco87" target="_blank" class="project-link">↗</a>
       </div>
-    </section>
+      <div class="project-card">
+        <div class="project-num">004</div>
+        <div class="project-title">devbyalex — Dev Blog</div>
+        <div class="project-stack">Node.js · Render · Original Writing</div>
+        <div class="project-desc">Built and deployed a full blog platform. Original writing that blends technical depth with personal narrative — C++ memory safety rules to identity after service. Demonstrates deployment skills and the ability to communicate complex ideas in human terms.</div>
+        <div class="project-tags">
+          <span class="tag">Self-Built</span>
+          <span class="tag">Deployed</span>
+          <span class="tag">Tech Writing</span>
+        </div>
+        <a href="https://devbyalex.onrender.com/" target="_blank" class="project-link">↗</a>
+      </div>
+    </div>
+  </section>
+</div>
 
-    <section id="enhancements">
-      <h2>Featured Projects</h2>
-      <p class="section-intro">
-        These projects show how I approach software design, algorithmic improvement, and database-backed application work.
-        I include both the original versions and the enhanced versions to make the engineering changes easy to review.
-      </p>
+<!-- BLOG -->
+<div class="section-full reveal" id="blog">
+  <section>
+    <div class="section-label">03 — Blog · <span style="color:var(--muted);">devbyalex.onrender.com</span></div>
+    <div style="margin-bottom:2.5rem;">
+      <h2 class="section-title">Combat. Code. Clarity.</h2>
+      <p style="color:var(--muted);font-size:15px;max-width:560px;line-height:1.7;">Personal, impressionable writing that builds a picture of who I am before you look at the code. Some posts are technical, some are deeply human. The mix is the point.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="https://devbyalex.onrender.com/post/trading-trauma" target="_blank" class="blog-card">
+        <div class="blog-date">Mar 2025</div>
+        <div class="blog-title">Trading Trauma for Stack Traces</div>
+        <div class="blog-desc">From Boy, to Soldier, to Paramedic, to Developer — the full origin story.</div>
+        <div class="blog-arrow">↗</div>
+      </a>
+      <a href="https://devbyalex.onrender.com/post/authfail-who-am-i-anymore" target="_blank" class="blog-card">
+        <div class="blog-date">Apr 2025</div>
+        <div class="blog-title">Authentication Failed: Who Even Am I Anymore?</div>
+        <div class="blog-desc">When the uniform came off, I couldn't log into myself. Coding gave me back the credentials.</div>
+        <div class="blog-arrow">↗</div>
+      </a>
+      <a href="https://devbyalex.onrender.com/post/STR53-CPP" target="_blank" class="blog-card">
+        <div class="blog-date">Jun 2025</div>
+        <div class="blog-title">STR53-CPP: A Pointer to Bad Memory</div>
+        <div class="blog-desc">A C++ memory safety rule — and years of pointing to broken things and pretending they were fine.</div>
+        <div class="blog-arrow">↗</div>
+      </a>
+      <a href="https://devbyalex.onrender.com/post/unpackdarkness" target="_blank" class="blog-card">
+        <div class="blog-date">Apr 2025</div>
+        <div class="blog-title">Unpacking the Darkness</div>
+        <div class="blog-desc">Leaving EMS isn't a switch you flip. Healing takes time — and sometimes starts while you're still inside the chaos.</div>
+        <div class="blog-arrow">↗</div>
+      </a>
+      <a href="https://devbyalex.onrender.com/post/first-no" target="_blank" class="blog-card">
+        <div class="blog-date">May 2025</div>
+        <div class="blog-title">The First Time I Said No</div>
+        <div class="blog-desc">It started with a leadership conference and a silent shift swap. What loyalty shouldn't cost you.</div>
+        <div class="blog-arrow">↗</div>
+      </a>
+      <a href="https://devbyalex.onrender.com/post/dejavu" target="_blank" class="blog-card">
+        <div class="blog-date">Jun 2025</div>
+        <div class="blog-title">Echoes on the Road</div>
+        <div class="blog-desc">A quiet, thoughtful moment on fatherhood — and what it means to be present.</div>
+        <div class="blog-arrow">↗</div>
+      </a>
+    </div>
+  </section>
+</div>
 
-      <article class="card">
-        <header class="card-head">
-          <div>
-            <p class="card-kicker">Software Design &amp; Engineering</p>
-            <h3>Secure C++ Client Management Refactor</h3>
-          </div>
-          <div class="tags"><span>C++</span><span>Security</span><span>Configuration</span></div>
-        </header>
-        <p>
-          Refactored a reverse-engineered client management system to remove hardcoded credentials, improve modularity,
-          and support safer authentication practices.
-        </p>
-        <div class="project-grid">
-          <div>
-            <h4>What changed</h4>
-            <ul class="project-list">
-              <li>Moved sensitive configuration out of the codebase and into environment-based values.</li>
-              <li>Separated responsibilities to make the program easier to maintain and extend.</li>
-              <li>Improved login handling to better reflect secure software practices.</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Why it matters</h4>
-            <ul class="project-list">
-              <li>Shows I can modernize vulnerable code without breaking the core workflow.</li>
-              <li>Demonstrates a security-first mindset in practical engineering decisions.</li>
-              <li>Highlights maintainability and scalability, not just correctness.</li>
-            </ul>
-          </div>
+<!-- SKILLS -->
+<div class="section-full reveal" id="skills">
+  <section>
+    <div class="section-label">04 — Skills</div>
+    <div class="skills-layout">
+      <div>
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:85%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:70%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:65%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">HTML5 / CSS3</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:72%"></div></div></div>
         </div>
-        <div class="disclaimer-banner">
-          <strong>Disclaimer:</strong> For demonstration purposes, a sample <code>.env</code> file is included in this repository.
-          In real-world practice, sensitive configuration files should never be committed to source control.
-        </div>
-        <div class="links">
-          <a class="btn" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin">Original</a>
-          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement1">Enhanced</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <header class="card-head">
-          <div>
-            <p class="card-kicker">Algorithms &amp; Data Structures</p>
-            <h3>Scalable Data Handling in C++</h3>
-          </div>
-          <div class="tags"><span>C++</span><span>Vectors</span><span>File I/O</span></div>
-        </header>
-        <p>
-          Reworked a static-array implementation into a more flexible design using <code>std::vector</code>, modular functions,
-          and stronger persistence and error handling.
-        </p>
-        <div class="project-grid">
-          <div>
-            <h4>What changed</h4>
-            <ul class="project-list">
-              <li>Replaced fixed-size arrays with dynamic containers better suited to the problem.</li>
-              <li>Modularized repeated logic for adding, searching, and managing client data.</li>
-              <li>Improved file persistence and defensive handling around invalid states and input.</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Why it matters</h4>
-            <ul class="project-list">
-              <li>Shows practical understanding of data structure choice and tradeoffs.</li>
-              <li>Demonstrates cleaner program organization and stronger reliability.</li>
-              <li>Reflects how I move classroom logic toward maintainable engineering habits.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="disclaimer-banner">
-          <strong>Disclaimer:</strong> This project includes demonstration-only configuration for review.
-          In real-world practice, sensitive configuration files should never be committed to source control.
-        </div>
-        <div class="links">
-          <a class="btn" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin">Original</a>
-          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement2">Enhanced</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <header class="card-head">
-          <div>
-            <p class="card-kicker">Databases</p>
-            <h3>Safer Python Dashboard and Data Access</h3>
-          </div>
-          <div class="tags"><span>Python</span><span>Validation</span><span>Dashboard</span></div>
-        </header>
-        <p>
-          Strengthened a MongoDB-oriented dashboard by improving validation, reducing dependence on live data access,
-          and documenting safer backend behavior.
-        </p>
-        <div class="project-grid">
-          <div>
-            <h4>What changed</h4>
-            <ul class="project-list">
-              <li>Introduced mock data support to improve testability and demonstration value.</li>
-              <li>Added stronger input validation and clearer failure handling.</li>
-              <li>Expanded documentation around security considerations and expected behavior.</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Why it matters</h4>
-            <ul class="project-list">
-              <li>Shows attention to safe failure paths, not only successful user flows.</li>
-              <li>Demonstrates backend thinking around data integrity and maintainability.</li>
-              <li>Highlights a practical approach to software that is easier to test and reason about.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="disclaimer-banner">
-          <strong>Disclaimer:</strong> This version uses mock data to improve portability and reviewability.
-          That makes the artifact easier to evaluate without access to a live database.
-        </div>
-        <div class="links">
-          <a class="btn" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoE3Origin">Original</a>
-          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoEnhancement3">Enhanced</a>
-        </div>
-      </article>
-    </section>
-
-    <section id="self-assessment">
-      <h2>Professional Story</h2>
-      <div class="section-body">
-        <p class="lead">
-          I came to software engineering after years in the Army and EMS, where pressure, accountability, and service
-          shaped the work. That background now shapes how I build software: stay calm, solve the real problem, communicate
-          clearly, and create systems people can trust.
-        </p>
-        <p>
-          I have now completed my computer science degree and am focused on turning that foundation into a long-term
-          software career. The full reflection below explains the transition in more detail, but the short version is
-          simple: I chose this path because I wanted to build, keep growing, and do meaningful work in a new field.
-        </p>
-
-        <div id="self-ref" class="expander">
-          <div class="prose">
-            <div class="more-text">
-              <p>
-                I caught myself looking in the mirror one day and realized I no longer recognized the person staring back.
-                Two deployments as an Army combat medic had already shaped me, but after coming home I carried that same
-                drive into civilian EMS, moving from EMT to paramedic right as COVID hit. What began as 24-hour shifts
-                quickly turned into endless 48-hour marathons with barely a day to recover.
-              </p>
-              <p>
-                The crisis pace has since eased, but the damage was done. Most EMTs and paramedics last an average of six
-                years in the field. I pushed through more than fifteen. Somewhere in that grind, the job consumed everything.
-                The reflection staring back was no longer the soldier who carried himself with confidence or the paramedic
-                who wanted to make a difference. It was someone hollowed out by exhaustion. That moment forced me to admit
-                a hard truth: I had built my life entirely around service to others, but in the process, I had lost myself.
-              </p>
-              <p>
-                So I made a choice. If I no longer recognized the man in the mirror, then it was time to rebuild him.
-                I turned toward computer science not because it was easy, but because it offered something I had not felt
-                in years: the chance to create, solve problems with purpose, and chart a future that was mine to define.
-              </p>
-              <p>
-                This program challenged me in ways I did not expect. I had to relearn how to learn while juggling a demanding
-                EMS schedule, raising a family of five daughters, and carrying the mental toll of years in uniform and on
-                the ambulance. But the same discipline that carried me through war zones and emergency calls also carried me
-                through debugging code at two in the morning. Programming taught me that success is not about knowing
-                everything. It is about breaking problems down, building solutions step by step, and being willing to fail,
-                learn, and keep going until it works.
-              </p>
-              <p>
-                Over the course of my studies, I built confidence moving from fundamentals into advanced concepts.
-                Courses in algorithms, data structures, and databases gave me a strong technical base, while projects like
-                DriverPass, Travlr Getaways, and Artemis Financial taught me to apply those skills in realistic scenarios.
-                I came to value not just writing code that runs, but writing code that is secure, modular, and maintainable.
-                My experience in CS-410 with reverse engineering showed me how vulnerable poorly written software can be,
-                and that pushed me toward a security-focused mindset.
-              </p>
-              <p>
-                The capstone experience pulled everything together. Enhancing and reflecting on my artifacts required me
-                to look at old code with new eyes. I took a reverse-engineered C++ client system and made it more scalable
-                and secure. I revisited a project centered on sorting and searching and demonstrated stronger algorithmic
-                thinking. I rebuilt parts of my MongoDB CRUD dashboard to highlight validation, modular backend design,
-                and safer behavior. Each enhancement was not just a code change. It was proof of growth.
-              </p>
-              <p>
-                Looking back, the biggest lesson I learned is adaptability. In EMS, no two calls are the same. In software,
-                no two problems are the same. Both fields demand quick thinking, teamwork, and resilience. What I gained
-                from SNHU is the technical foundation and engineering mindset to apply those same qualities in a new career.
-              </p>
-              <p>
-                Now that I have completed the degree, I am ready to contribute as a software developer and continue growing
-                in backend and security-focused work. My portfolio demonstrates not only the artifacts of my learning, but
-                also the resilience and drive behind them. This career change has given me more than a credential. It has
-                given me a second chance to build a future that challenges me, supports my family, and makes full use of
-                everything I have learned along the way.
-              </p>
-            </div>
-            <p class="toggle-row">
-              <a href="#" class="toggle-reflection" id="toggleReflection" role="button" aria-expanded="false">Read full professional story</a>
-            </p>
-          </div>
-
-          <noscript>
-            <style>
-              #self-ref .more-text { max-height: none !important; opacity: 1 !important; }
-              #self-ref .toggle-row { display: none !important; }
-            </style>
-          </noscript>
+        <div class="skill-group">
+          <div class="skill-group-title">Web &amp; Backend</div>
+          <div class="skill-item"><span class="skill-name">Node.js / Express</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:78%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Angular</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:65%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">REST APIs</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:82%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">MongoDB / MySQL</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:70%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Spring Boot</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:60%"></div></div></div>
         </div>
       </div>
-    </section>
-
-    <section id="code-review">
-      <h2>Informal Code Review</h2>
-      <p class="muted">
-        An 8-minute walkthrough of the original artifacts, the issues I identified, and the reasoning behind each enhancement.
-      </p>
-      <div class="video-wrapper">
-        <video controls preload="metadata" aria-label="CS-499 Code Review video" poster="assets/img/code-review-poster.jpg">
-          <source src="assets/video/CapstoneCodeReview.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video. <a href="assets/video/CapstoneCodeReview.mp4">Download</a>.
-        </video>
+      <div>
+        <div class="skill-group">
+          <div class="skill-group-title">Security &amp; Analysis</div>
+          <div class="skill-item"><span class="skill-name">Secure Coding (SEI CERT)</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:82%;background:var(--accent2)"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Reverse Engineering</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:72%;background:var(--accent2)"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Cryptography (AES/SHA)</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:70%;background:var(--accent2)"></div></div></div>
+          <div class="skill-item"><span class="skill-name">JWT / Auth</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:73%;background:var(--accent2)"></div></div></div>
+          <div class="skill-item"><span class="skill-name">SonarQube</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:60%;background:var(--accent2)"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Ghidra</span><div class="skill-bar-outer"><div class="skill-bar-inner" style="--bar-width:60%;background:var(--accent2)"></div></div></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tools &amp; Platforms</div>
+          <div class="tools-wrap">
+            <span class="tool-chip">Git / GitHub</span>
+            <span class="tool-chip">VS Code</span>
+            <span class="tool-chip">Visual Studio</span>
+            <span class="tool-chip">Postman</span>
+            <span class="tool-chip">Android Studio</span>
+            <span class="tool-chip">Agile / Scrum</span>
+            <span class="tool-chip">MVC Architecture</span>
+            <span class="tool-chip">GitHub Pages</span>
+            <span class="tool-chip">Render</span>
+            <span class="tool-chip">DevSecOps</span>
+          </div>
+        </div>
+        <div class="currently-learning">
+          <div class="cl-label">&#9654; Currently exploring</div>
+          <div class="cl-items">
+            <span class="cl-item">Claude AI &amp; prompt engineering</span>
+            <span class="cl-item">Cloud infrastructure</span>
+            <span class="cl-item">AWS fundamentals</span>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Alexander DeMarco &middot; <a target="_blank" rel="noopener" href="https://github.com/ademarco87">GitHub</a></p>
-  </footer>
+<!-- CAPSTONE -->
+<div class="section-full reveal" id="capstone">
+  <section>
+    <div class="section-label">05 — Capstone &amp; Code Review</div>
+    <div style="margin-bottom:2.5rem;">
+      <h2 class="section-title">The work, before and after.</h2>
+      <p style="color:var(--muted);font-size:15px;max-width:560px;line-height:1.7;">My capstone enhanced three artifacts — each one showing how I take existing code, identify weak points, and improve structure, security, and long-term maintainability. The video below walks through the originals and the reasoning behind every change.</p>
+    </div>
+    <div class="capstone-grid">
+      <div>
+        <div class="video-wrap">
+          <video controls poster="assets/img/code-review-poster.jpg">
+            <source src="assets/video/CapstoneCodeReview.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+            <a href="assets/video/CapstoneCodeReview.mp4">Download the video</a>.
+          </video>
+          <div class="video-label">
+            <span class="video-label-text">Informal Code Review Walkthrough</span>
+            <span class="video-duration">~8 min</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem;padding:1.25rem;background:var(--bg2);border-left:2px solid var(--accent);">
+          <p style="font-size:13px;color:var(--muted);line-height:1.7;">An 8-minute walkthrough of the original artifacts, the issues identified, and the reasoning behind each enhancement. No polish, no script — just honest engineering thinking.</p>
+        </div>
+      </div>
+      <div>
+        <div class="artifact-item">
+          <div class="artifact-category">Software Design &amp; Engineering</div>
+          <div class="artifact-title">Secure C++ Client Management Refactor</div>
+          <div class="artifact-desc">Removed hardcoded credentials, replaced with environment-based authentication. Improved modularity and separation of concerns. Follows SEI CERT C++ secure coding standards.</div>
+          <div class="artifact-links">
+            <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin" target="_blank" class="artifact-link">Original ↗</a>
+            <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement1" target="_blank" class="artifact-link enhanced">Enhanced ↗</a>
+          </div>
+        </div>
+        <div class="artifact-item">
+          <div class="artifact-category">Algorithms &amp; Data Structures</div>
+          <div class="artifact-title">Scalable Data Handling in C++</div>
+          <div class="artifact-desc">Replaced fixed-size arrays with <code style="font-family:var(--mono);font-size:12px;color:var(--accent3);">std::vector</code>, modularized repeated logic, and improved file persistence and error handling. Demonstrates practical understanding of data structure tradeoffs.</div>
+          <div class="artifact-links">
+            <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoOrigin" target="_blank" class="artifact-link">Original ↗</a>
+            <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family1/CapstoneDemoEnhancement2" target="_blank" class="artifact-link enhanced">Enhanced ↗</a>
+          </div>
+        </div>
+        <div class="artifact-item">
+          <div class="artifact-category">Databases</div>
+          <div class="artifact-title">Safer Python Dashboard &amp; Data Access</div>
+          <div class="artifact-desc">Added mock data support for portability, stronger input validation, and clearer failure handling around MongoDB access. Demonstrates backend thinking around data integrity — not just happy-path flows.</div>
+          <div class="artifact-links">
+            <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoE3Origin" target="_blank" class="artifact-link">Original ↗</a>
+            <a href="https://github.com/ademarco87/CapstoneDemo/tree/main/Family2/CapstoneDemoEnhancement3" target="_blank" class="artifact-link enhanced">Enhanced ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
-  <script>
-    (function() {
-      const expander = document.querySelector('#self-ref');
-      if (!expander) return;
+<!-- EXPERIENCE -->
+<div class="section-full reveal" id="experience">
+  <section>
+    <div class="section-label">06 — Experience</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot active"></div>
+          <div class="tl-period">Feb 2026 — Present</div>
+          <div class="tl-title">Interim Battalion Chief</div>
+          <div class="tl-org">Berkeley County EMS · Moncks Corner, SC</div>
+          <div class="tl-body">Command-level oversight of multiple field units. Decision authority during time-sensitive operational incidents. Liaison between field supervisors and senior leadership.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Jan 2022 — Feb 2026</div>
+          <div class="tl-title">Paramedic Lieutenant / FTO &amp; TEMS Lead</div>
+          <div class="tl-org">Berkeley County EMS · Moncks Corner, SC</div>
+          <div class="tl-body">Rebuilt and led the county TEMS program from scratch — authored all policies, procedures, and training standards. Led field operations and personnel. Analyzed response data to drive process improvements.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Mar 2018 — Jan 2022</div>
+          <div class="tl-title">Paramedic Crew Chief / EMT</div>
+          <div class="tl-org">Berkeley County EMS · Moncks Corner, SC</div>
+          <div class="tl-body">Advanced 911 emergency care. Precise electronic patient records and clinical documentation in compliance with regulatory standards.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Jan 2010 — Dec 2018</div>
+          <div class="tl-title">Senior Healthcare Specialist (68W)</div>
+          <div class="tl-org">United States Army · Fort Hood, TX</div>
+          <div class="tl-body">Medical support in high-risk operational environments. Field operations and medical evacuations. Accountability for $100K+ in mission-critical equipment. Held DoD Secret Clearance.</div>
+        </div>
+      </div>
+      <div>
+        <div style="padding:2rem;background:var(--bg2);margin-bottom:1px;">
+          <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--accent);text-transform:uppercase;margin-bottom:1rem;">What I bring from the field</div>
+          <p style="font-size:14px;color:var(--muted);line-height:1.75;">Most entry-level engineers have never had to make a decision where failure costs a life or a mission. I have — and that shapes how I build software.</p>
+          <br>
+          <p style="font-size:14px;color:var(--muted);line-height:1.75;">I write defensively, document thoroughly, think about failure modes before they happen, and communicate clearly across technical and non-technical stakeholders.</p>
+        </div>
+        <div style="padding:2rem;background:var(--bg2);border-left:2px solid var(--accent2);">
+          <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--accent2);text-transform:uppercase;margin-bottom:0.75rem;">Security Clearance</div>
+          <div style="font-size:14px;color:var(--text);margin-bottom:4px;">Active Public Trust</div>
+          <div style="font-size:13px;color:var(--muted);">Previously held DoD Secret · Last active 2018</div>
+          <div style="margin-top:1rem;font-size:13px;color:var(--muted);">Practical advantage for government, defense, and enterprise roles.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
-      const toggle = expander.querySelector('.toggle-reflection');
-      const moreText = expander.querySelector('.more-text');
+<!-- CONTACT -->
+<div class="section-full reveal" id="contact">
+  <section>
+    <div class="section-label">07 — Contact</div>
+    <div class="contact-layout">
+      <div>
+        <h2 class="contact-intro">Let's build<br><span>something</span><br>worth building.</h2>
+        <p class="contact-sub">I'm actively looking for junior software engineering roles — backend, security-focused, or full stack. Government, defense, and enterprise environments are a natural fit given my background and clearance.</p>
+        <a href="mailto:alex.demarco87@yahoo.com" class="btn-primary" style="display:inline-block;">Send an Email ↗</a>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:alex.demarco87@yahoo.com" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-type">Email</span>
+            <span class="contact-link-val">alex.demarco87@yahoo.com</span>
+          </div>
+          <span class="contact-link-arr">↗</span>
+        </a>
+        <a href="tel:8439648374" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-type">Phone</span>
+            <span class="contact-link-val">843-964-8374</span>
+          </div>
+          <span class="contact-link-arr">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ademarco87" target="_blank" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-type">LinkedIn</span>
+            <span class="contact-link-val">linkedin.com/in/ademarco87</span>
+          </div>
+          <span class="contact-link-arr">↗</span>
+        </a>
+        <a href="https://github.com/ademarco87" target="_blank" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-type">GitHub</span>
+            <span class="contact-link-val">github.com/ademarco87</span>
+          </div>
+          <span class="contact-link-arr">↗</span>
+        </a>
+        <a href="https://devbyalex.onrender.com/" target="_blank" class="contact-link">
+          <div class="contact-link-left">
+            <span class="contact-link-type">Blog</span>
+            <span class="contact-link-val">devbyalex.onrender.com</span>
+          </div>
+          <span class="contact-link-arr">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
 
-      expander.removeAttribute('data-open');
-      toggle.textContent = 'Read full professional story';
-      toggle.setAttribute('aria-expanded', 'false');
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">© 2025 Alexander DeMarco · Summerville, SC</div>
+  <div class="footer-tag">Combat<span>.</span> Code<span>.</span> Clarity<span>.</span></div>
+</footer>
 
-      function openStory() {
-        expander.setAttribute('data-open', 'true');
-        toggle.textContent = 'Collapse story';
-        toggle.setAttribute('aria-expanded', 'true');
-        moreText.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+<script>
+const glow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
 
-      function closeStory() {
-        expander.removeAttribute('data-open');
-        toggle.textContent = 'Read full professional story';
-        toggle.setAttribute('aria-expanded', 'false');
-        const section = document.querySelector('#self-assessment');
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
+const progressBar = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = Math.round((scrolled / total) * 100) + '%';
+});
 
-      toggle.addEventListener('click', function(event) {
-        event.preventDefault();
-        if (expander.hasAttribute('data-open')) {
-          closeStory();
-        } else {
-          openStory();
-        }
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => revealObserver.observe(el));
+
+const skillsSection = document.getElementById('skills');
+const skillBarObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const layout = entry.target.querySelector('.skills-layout');
+      if (layout) layout.classList.add('skills-visible');
+      skillBarObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+if (skillsSection) skillBarObserver.observe(skillsSection);
+
+const sections = document.querySelectorAll('div[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute('id');
+      navLinks.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + id) a.classList.add('active');
       });
+    }
+  });
+}, { threshold: 0.4 });
+sections.forEach(s => navObserver.observe(s));
 
-      toggle.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          toggle.click();
-        }
-      });
-    })();
-  </script>
+const hamburger = document.getElementById('hamburger');
+const navLinksEl = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  navLinksEl.classList.toggle('open');
+});
+navLinksEl.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    navLinksEl.classList.remove('open');
+  });
+});
+</script>
 </body>
 </html>
