@@ -95,7 +95,7 @@
         <div class="project-num">001 · Independent Project · 2025–Present</div>
         <h3 class="project-title">Workforce Allocation &amp; Decision Support System</h3>
         <div class="project-stack">Python · JavaScript · Cloudflare Workers · D1 · Pages</div>
-        <p class="project-desc">Staffing bids for up to 200 candidates were being ranked by hand: slow, hard to audit, and error-prone when shift preferences conflicted. I validated the ranking logic in an Excel prototype, then built a hosted web app that scores candidates across multiple shift preferences, resolves conflicts, and applies deterministic tie-breaking, with administrator controls for managing each bid cycle. Tested against sample scenarios; hosted and in pilot testing, not yet in operational use.</p>
+        <p class="project-desc">Staffing bids for up to 200 candidates were being ranked by hand: slow, hard to audit, and error-prone when shift preferences conflicted. I validated the ranking logic in an Excel prototype, then built a hosted web app that scores candidates across multiple shift preferences, resolves conflicts, and applies deterministic tie-breaking. Each agency gets an isolated space behind its own org code, with role-based access, session timeouts, bid windows, and a full audit log. The public demo uses sample data and an illustrative formula; the production scoring stays server-side. Hosted and in pilot testing, not yet in operational use.</p>
         <div class="arch" aria-label="Architecture"><span class="arch-node">Browser</span><span class="arch-arrow" aria-hidden="true">→</span><span class="arch-node">Cloudflare Pages · front end</span><span class="arch-arrow" aria-hidden="true">→</span><span class="arch-node">Workers · API &amp; scoring</span><span class="arch-arrow" aria-hidden="true">→</span><span class="arch-node">D1 · data</span></div>
         <div class="project-tags">
           <span class="tag">Self-Initiated</span>
@@ -105,7 +105,7 @@
           <span class="tag">In Testing</span>
         </div>
         <div class="project-actions">
-          <a href="https://shiftqapp.com/login" target="_blank" rel="noopener">Live App · Login Required ↗</a>
+          <a href="https://shiftqapp.com/#demo" target="_blank" rel="noopener">Live Demo ↗</a>
           <a href="#contact">Code Private · Walkthrough on Request</a>
         </div>
       </div>
