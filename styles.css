@@ -1271,7 +1271,7 @@
     white-space: nowrap;
     border-right: 2px solid var(--accent);
     max-width: 0;
-    animation: typing 2s steps(40, end) 1s forwards, blink 0.75s step-end 3s 4;
+    animation: typing 2s steps(40, end) 1s forwards, blink 1.6s step-end 2s infinite;
   }
 
   @keyframes typing {
